@@ -1,5 +1,7 @@
 #testing wtf forms
 #app.config['WTF_CSRF_ENABLED'] = False to disable token checking, since POST isn't a real POST
+#put the app.config into test.py file
+
 class SnackViewsTestCase(TestCase): #this checks a GET request
 """tests for views of snacks"""
     def test_snack_add_form(self):
